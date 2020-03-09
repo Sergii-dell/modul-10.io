@@ -1,0 +1,27 @@
+                         /*  подключение файлов шрифтов  */
+                         @font-face{                               
+                          font-family:'Montserrat';
+                          font-weight: 400;
+                          src: url('montserrat-400.woff') format('woff');                
+                        } 
+                        @font-face{                               
+                          font-family:'Montserrat';
+                          font-weight: 700;
+                          src: url('montserrat-700.woff') format('woff');                
+                        } 
+                        @font-face{                               
+                          font-family:'Roboto';
+                          font-weight: 300;
+                          src: url('roboto-300.woff') format('woff');                
+                        }
+                        @font-face{                               
+                          font-family:'Roboto';
+                          font-weight: 400;
+                          src: url('roboto-400.woff') format('woff');                
+                        }
+                        @font-face{                               
+                          font-family:'Kaushan Script';
+                          font-weight: 400;
+                          src: url('kaushan-script-400.woff') format('woff');                
+                        }
+                        

@@ -1,0 +1,531 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+                                                 /*  ОБЩИЕ НАСТРОЙКИ  */
+.container{   
+  padding: 0 15px;            /* отображение контенера с отступом по бокам */           
+  width: 1200px;              /* ширина  контейнера */
+  margin: 0 auto;             /* по  вертикали  ноль  по  ширине  авто  */
+}
+                                                        /* HEDER */
+.baner{
+  display: block;
+  min-width: 1230px;
+  min-height: 1000px;
+  background-image: url(../img/baner.jpg);    /* путь к картинке */   
+  background-size: cover;                     /* растянуть по контенту */                            
+  background-position: center;                /* расположить по центру */            
+  background-repeat: no-repeat;               /* запретить повторение картинки */
+}
+
+.header{
+  padding: 0 15px;            /* отображение контенера с отступом по бокам */           
+  width: 1200px;              /* ширина  контейнера */
+  margin: 0 auto;             /* по  вертикали  ноль  по  ширине  авто  */
+ }
+  .header__wrapper{
+    display: -webkit-box;                  
+    display: -ms-flexbox;                  
+    display: flex; 
+    -webkit-box-pack: justify; 
+    -ms-flex-pack: justify; 
+    justify-content: space-between;          /* растянуть */ 
+    padding-bottom: 127px;
+  }
+  .header__logo{
+    padding-top: 25px;
+  }
+  .header__menu{
+    padding-top: 39px;
+  }
+  .header__title{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 850px;
+    text-align: center;
+    font-size: 72px;                       /* выбираем  размер  для  шрифта */
+    line-height: 142px;                  /*  размер  строковой  линии  */
+    font-family:'Kaushan Script';
+    font-weight: 400;
+    color: #ffffff;                      /* указываем  цвет  для  шрифта */
+    margin: auto;
+  }
+  .header__subtitle{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 850px;
+    text-align: center;
+    font-size: 150px;                       /* выбираем  размер  для  шрифта */
+    line-height: 150px;                  /*  размер  строковой  линии  */
+    font-family:'Montserrat';
+    font-weight: 700;
+    color: #ffffff;                      /* указываем  цвет  для  шрифта */
+    text-transform: uppercase ;          /*  зделать  текст  с  большой  буквой  */
+    padding-bottom: 88px;
+    margin: auto;
+  }
+  .header__booton{
+    text-align: center;
+  }
+
+.logo{
+  display: inline-block;                                   /*  делаем  елемент  блочным  */
+  margin: 0;
+  padding: 0;
+  text-decoration: none ;                           /*  убераем  подчеркивание  */
+  font-family: 'Montserrat';                        /* выбираем  необходимый  шрифт */
+  font-weight: 700;                                 /* выбираем  жирность  шрифта */
+  font-size: 30px;                                  /* выбираем  размер  для  шрифта */
+  line-height: 30px;                                /*  размер  строковой  линии  */
+  color: #ffffff;                                 /* указываем  цвет  для  шрифта */
+  }
+
+.menu{
+  margin: 0;
+  padding: 0;
+  width: 620px;
+  list-style: none;                        /* убераем точки */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -webkit-box-pack: justify; 
+  -ms-flex-pack: justify; 
+  justify-content: space-between;          /* растянуть */ 
+  }
+  .menu__btn{
+    display: inline-block; 
+    font-family: 'Montserrat';          /* название одно */
+    font-weight: 400;                    /* жирность */
+    font-size: 14px;                     /* размер  шрифта  текста  */ 
+    line-height: 14px;                  /*  размер  строковой  линии  */
+    text-transform: uppercase ;          /*  зделать  текст  с  большой  буквой  */
+    text-decoration: none ;              /*  убераем  подчеркивание  */
+    color: #ffffff;                                        /*  цвет  текста  */
+    -webkit-transition: color  200ms linear, border  200ms linear;
+    -o-transition: color  200ms linear, border  200ms linear;
+    transition: color  200ms linear, border  200ms linear;   /*  плавная задержка  */
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.0);
+  }
+  .menu__btn--active:focus,
+  .menu__btn--active:hover{
+    color: #fce38a;
+    border-bottom: 3px solid #fce38a;
+  }
+  .menu__svg{
+    width: 22px;
+    height: 22px;
+  }
+  .menu__img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    fill: #ffffff;
+  }
+  .menu__img--active:focus,
+  .menu__img--active:hover{
+    fill:#fce38a;
+  }
+
+.booton{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 154px;
+  height: 34px;
+  font-family:'Montserrat';
+  font-weight: 700;
+  font-size: 14px;                       /* выбираем  размер  для  шрифта */
+  line-height: 34px;                  /*  размер  строковой  линии  */
+  text-decoration: none;              /*  убераем  подчеркивание  */
+  color: #ffffff;                      /* указываем  цвет  для  шрифта */
+  text-transform: uppercase ;          /*  зделать  текст  с  большой  буквой  */
+  text-align: center;
+  background-color: none;
+  border: 3px solid #ffffff; 
+  -webkit-transition: color  200ms linear, border  200ms linear; 
+  -o-transition: color  200ms linear, border  200ms linear; 
+  transition: color  200ms linear, border  200ms linear;   /*  плавная задержка  */
+  }
+  .booton--active:focus,
+  .booton--active:hover{
+    color: #000000;                      /* указываем  цвет  для  шрифта */
+    border: 3px solid #000000;
+  }
+                                                     /* MAIN */
+.section-service{
+  padding-top: 47px;
+  padding-bottom: 14px;
+  }
+  .section-service__wrapper{
+    margin-bottom: 49px;
+    }
+
+.caption{
+  margin: 0;
+  padding: 0;
+  display: block;                        /*  делаем  елемент  блочным  */
+  font-family: 'Montserrat';             /* выбираем  необходимый  шрифт */
+  font-weight: 700;                      /* выбираем  жирность  шрифта */
+  font-size: 30px;                       /* выбираем  размер  для  шрифта */
+  text-transform: uppercase ;          /*  зделать  текст  с  большой  буквой  */
+  line-height: 60px;                  /*  размер  строковой  линии  */
+  color: #333333;                      /* указываем  цвет  для  шрифта */
+  text-align: center;
+  }
+  .caption::after{
+    display: block;                            /* делаем  елемент  блочным */
+    content: '';                             /*  создайом  пустой контент  */
+    padding:0;
+    margin: 0;
+    width: 60px;                            /*  задайом  ширину */
+    height: 3px;                             /*  задайом  высоту  */
+    background-color: #f38181;               /* задайом цвет заливки контента */
+    margin: 0  auto;                           /*  устанавливаем  блок  по  центру  ширины  */
+    margin-top: 24px;
+    }
+  .caption__text{ 
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-family: 'Kaushan Script', cursive;          /* название одно */
+    font-weight: 400;                    /* разный вес/жирность */
+    font-size: 24px;                     /* размер  шрифта  текста  */ 
+    line-height: 24px;                  /*  размер  строковой  линии  */
+    text-transform: none ;          /*  зделать  текст  с  большой  буквой  */
+    color: #333333;                      /* указываем  цвет  для  шрифта */
+    text-align: center;
+    }
+                        
+.list{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;      /*  растянуть  елементы  равномерно  */
+  list-style: none;                    /*  убераем  оформление  списка  ( точки )  */
+  margin: 0;
+  padding: 0;
+  }
+  .list__item{
+    position: relative;
+    width: 310px;                     /*  ширина  лишки контенера  */
+    padding-left: 90px;               /*  делаем левый падинг для картинки  */
+    margin-bottom: 78px;
+    }
+  .list__img{
+    display: block;
+    position: absolute;
+    fill: #95e1d3;
+    top: 15px;
+    left: 29px;
+    width: 32px;
+    height: 32px;  
+    }
+  .list__title{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';             /* выбираем  необходимый  шрифт */
+    font-weight: 400;                      /* выбираем  жирность  шрифта */
+    font-size: 14px;                       /* выбираем  размер  для  шрифта */
+    text-transform: uppercase ;          /*  зделать  текст  с  большой  буквой  */
+    line-height: 44px;                  /*  размер  строковой  линии  */
+    color: #333333;                      /* указываем  цвет  для  шрифта */
+    }
+  .list__text{
+    margin: 0;
+    padding: 0;
+    display: block;                        /*  делаем  елемент  блочным  */
+    font-family: 'Roboto';                 /* выбираем  необходимый  шрифт */
+    font-weight: 400;                      /* выбираем  жирность  шрифта */
+    font-size: 15px;                       /* выбираем  размер  для  шрифта */
+    text-transform: none;                  /*  зделать  текст  с  большой  буквой  */
+    line-height: 24px;                     /*  размер  строковой  линии  */
+    color: #a8a8a8;                      /* указываем  цвет  для  шрифта */
+   }
+
+.section-cards{
+  padding-bottom: 67px;
+  }
+ .section-cards__wrapper{
+   margin-bottom: 40px;
+   }
+  .section-cards__quote{
+   margin: 0;
+   padding: 0;
+   display: block;                        /*  делаем  елемент  блочным  */
+   font-family: 'Roboto';          /* выбираем  необходимый  шрифт */
+   font-weight: 400;                      /* выбираем  жирность  шрифта */
+   font-size: 15px;                       /* выбираем  размер  для  шрифта */
+   text-transform: none;          /*  зделать  текст  с  большой  буквой  */
+   line-height: 24px;                  /*  размер  строковой  линии  */
+   color: #999999;                      /* указываем  цвет  для  шрифта */
+   width: 955px;                         /* ширина  контейнера */
+   text-align: center;
+   margin: 0 auto;
+   padding-bottom: 85px;
+   }
+
+.cards{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;      /*  растянуть  елементы  равномерно  */
+  list-style: none;                    /*  убераем  оформление  списка  ( точки )  */
+  margin: 0;
+  padding: 0;
+  }
+  .cards__wrap{
+    width: 370px;
+    height: 460px;
+    border-right: 10px solid #95e1d3;
+    border-bottom: 10px solid #95e1d3;
+   }
+  .cards__item{
+    position: relative;
+    -webkit-transition:  200ms linear;
+    -o-transition:  200ms linear;
+    transition:  200ms linear;
+   }
+  .cards__item--active:focus,
+  .cards__item--active:hover{ 
+    -webkit-transform: translate( -10px, -10px); 
+    -ms-transform: translate( -10px, -10px); 
+    transform: translate( -10px, -10px);      /* перемещяем картинку на верх и лево на 10px */
+   }
+  .cards__img{
+    position: absolute;
+   }
+  .cards__socials{
+    position: absolute;
+    list-style: none;     /*  убераем  оформление  списка  ( точки )  */
+    width: 380px;
+    height: 470px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(242, 226, 145, 0.9)),to(rgba(234, 138, 137, 0.9)));
+    background-image: -o-linear-gradient(bottom, rgba(242, 226, 145, 0.9),rgba(234, 138, 137, 0.9));
+    background-image: linear-gradient(to top, rgba(242, 226, 145, 0.9),rgba(234, 138, 137, 0.9));
+    opacity: 0;
+    z-index: 0;
+    -webkit-transition:  200ms linear;
+    -o-transition:  200ms linear;
+    transition:  200ms linear;
+   }
+  .cards__item:hover .cards__socials--active,
+  .cards__item:focus .cards__socials--active{ 
+    opacity: 1;
+   }
+  .cards__feisbuk{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    width: 55px;
+    height: 56px;
+    border: 0;
+    background: #fce38a;                                    /*  убераем  фон  кнопки  */
+    top: 207px;
+    left: 78px;
+    z-index: 1;
+    -webkit-transition:  200ms linear;
+    -o-transition:  200ms linear;
+    transition:  200ms linear;
+   }                     
+  .cards__link--active:focus,      /*  задайом  цвет  при  наведении  на  сылку  */
+  .cards__link--active:hover{      /*  задайом  цвет  при    перемещении  клавиатурой  таб  */
+    background-color: #95e1d3;                                            
+   }
+  .cards__link--active:focus,      /*  задайом  цвет  при  наведении  на  сылку  */
+  .cards__link--active:hover .cards__icon--active{      /*  задайом  цвет  при    перемещении  клавиатурой  таб  */ 
+    fill: #ffffff;                    
+   }                     
+  .cards__icon{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    fill: #f38181;
+   }
+  .cards__tviter{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    width: 55px;
+    height: 56px;
+    border: 0;
+    background: #fce38a;                                    /*  убераем  фон  кнопки  */
+    -webkit-transition:  200ms linear;
+    -o-transition:  200ms linear;
+    transition:  200ms linear;
+    top: 207px;
+    left: 134px;
+    z-index: 1;
+   }
+  .cards__pinterest{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    width: 55px;
+    height: 56px;
+    border: 0;
+    background: #fce38a;                                    /*  убераем  фон  кнопки  */
+    -webkit-transition:  200ms linear;
+    -o-transition:  200ms linear;
+    transition:  200ms linear;
+    top: 207px;
+    left: 190px;
+    z-index: 1;
+   }
+  .cards__instagram{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    width: 55px;
+    height: 56px;
+    border: 0;
+    background: #fce38a;                                    /*  убераем  фон  кнопки  */
+    -webkit-transition:  200ms linear;
+    -o-transition:  200ms linear;
+    transition:  200ms linear;
+    top: 207px;
+    left: 246px;
+    z-index: 1;
+   }
+  .cards__title{
+    margin: 0;
+    padding: 0;
+    display: block;                        /*  делаем  елемент  блочным  */
+    font-family: 'Montserrat';             /* выбираем  необходимый  шрифт */
+    font-weight: 400;                      /* выбираем  жирность  шрифта */
+    font-size: 14px;                       /* выбираем  размер  для  шрифта */
+    text-transform: uppercase;          /*  зделать  текст  с  большой  буквой  */
+    line-height: 14px;                  /*  размер  строковой  линии  */
+    color: #333333;                      /* указываем  цвет  для  шрифта */
+    text-align: center;
+    padding-top: 30px;
+   }
+  .cards__text{
+    margin: 0;
+    padding: 0;
+    display: block;                        /*  делаем  елемент  блочным  */
+    font-family: 'Roboto';             /* выбираем  необходимый  шрифт */
+    font-weight: 300;                      /* выбираем  жирность  шрифта */
+    font-size: 15px;                       /* выбираем  размер  для  шрифта */
+    font-style: italic;
+    text-transform: none;          /*  зделать  текст  с  большой  буквой  */
+    line-height: 43px;                  /*  размер  строковой  линии  */
+    color: #a8a8a8;                      /* указываем  цвет  для  шрифта */
+    text-align: center;
+   }
+                                                    /* FUTER */
+.footer{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;                    
+  -webkit-box-pack: justify;                    
+  -ms-flex-pack: justify;                    
+  justify-content: space-between;      /*  растянуть  елементы  равномерно  */
+  border-top: 1px solid #e5e5e5;
+  }
+  .footer__excerpt{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';             /* выбираем  необходимый  шрифт */
+    font-weight: 400;            /* жирность  */
+    line-height: 40px;          /*  размер  строковой  линии  */
+    font-size: 14px;            /*  размер  шрифта  */
+    color: #333333;            /*  цвет  текста  */
+    text-align: left;           /*  расположение  текста  в  контенере  по  ширене  */
+    padding-top: 10px;
+    padding-bottom: 12px;
+   }
+  .footer__link{
+    text-decoration: none ;        /*  убераем  подчеркивание  */
+    color: #333333; 
+    -webkit-transition: color  200ms linear; 
+    -o-transition: color  200ms linear; 
+    transition: color  200ms linear;   /*  изменение с задержкой  */
+   }
+  .footer__link--active:hover,      /*  задайом  цвет  при  наведении  на  сылку  */
+  .footer__link--active:focus{      /*  задайом  цвет  при    перемещении  клавиатурой  таб  */
+    color: #f38181;
+   }
+  .footer__wrap{
+    padding-top: 10px;
+    padding-bottom: 12px;
+  }
+
+.form{
+    position: relative;
+   }
+  .form__text{
+    position: absolute;
+    width: 229px;
+    height: 38px;
+    padding: 0;
+    border: 1px solid #e7e7e7;
+    padding-left: 12px;
+    color: #d9d9d9;
+    font-family: 'Roboto', sans-serif;             /* выбираем  необходимый  шрифт */
+    font-weight: 300;                      /* выбираем  жирность  шрифта */
+    font-size: 15px;                       /* выбираем  размер  для  шрифта */
+    font-style: italic;
+    right: 149px;
+   }   
+  .form__button{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border: 0;
+    background-color: #95e1d3;
+    right: 0;
+    font-family: 'Montserrat', sans-serif;            /* выбираем  необходимый  шрифт */
+    font-weight: 700;                      /* выбираем  жирность  шрифта */
+    font-size: 14px;                       /* выбираем  размер  для  шрифта */
+    text-transform: uppercase;          /*  зделать  текст  с  большой  буквой  */
+    line-height: 14px;                  /*  размер  строковой  линии  */
+    color: #ffffff;
+    text-align: center;
+    -webkit-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+   }
+  .form__button--active:hover,
+  .form__button--active:focus{
+    background-color: #000000;
+   }
+                            

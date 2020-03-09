@@ -1,0 +1,5 @@
+@media(min-resolution: 192dpi), (min-resolution: 2dppx){        /* ретина для банера */ 
+    .baner{
+    background-image: url(../img/baner@2x.jpg);                 /* путь к картинке */ 
+    }  
+    }
